@@ -13,8 +13,7 @@ module.exports = {
         loader: 'babel-loader',
         options: {
           presets: ['react', 'es2015','stage-0'] 
-        }npm run start-dev
-
+        }
       }
     ]
   }
