@@ -1,0 +1,31 @@
+h3,p,input{
+	font-family: 'PT Sans', sans-serif;
+}
+input.type{
+	width: 20vw;
+	height: 2vh;
+	border-radius: 3px;
+	text-align: center;
+    border:1px solid #cccccc
+}
+
+input.submit{
+	border: none;
+	background-color: deepskyblue;
+	color:white;
+	text-align: center;
+	font-size: 1.3vh;
+	margin-left: 5px;
+	border-radius: 3px;
+	height: 2.5vh;
+	width: 5vw;
+
+}
+
+.type:focus{
+	outline:none;
+}
+
+.submit:active,.submit:focus{
+	outline:none;
+}
