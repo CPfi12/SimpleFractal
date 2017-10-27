@@ -23,7 +23,6 @@ class Main extends Component {
       axios.get(`/percentiles/${evt.target.candid.value}`)
         .then(arr=>arr.data)
         .then((arr)=>{
-          console.log(arr);
           this.setState({id:id,commPercentile:arr[0],codePercentile:arr[1],person:arr[2]});
         })
         .catch(console.err)
@@ -33,7 +32,6 @@ class Main extends Component {
 
 
   render () {
-    console.log(this.state);
     return (
       <div>
         <h3>Candidate ID: {this.state.id}</h3>

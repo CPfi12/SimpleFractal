@@ -2,7 +2,6 @@ const router = require('express').Router();
 const Promise = require('bluebird');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
-var PythonShell = require('python-shell');
 var Companies = require('../db/models/index.js').Companies;
 var ScoreRecords = require('../db/models/index.js').ScoreRecords;
 
@@ -57,6 +56,7 @@ router.get('/percentiles/:id', function(req, res, next){
 
 
 		})
+		.catch(console.err)
 
 					
 })

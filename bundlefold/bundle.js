@@ -21912,7 +21912,6 @@ var Main = function (_Component) {
         _axios2.default.get('/percentiles/' + evt.target.candid.value).then(function (arr) {
           return arr.data;
         }).then(function (arr) {
-          console.log(arr);
           _this2.setState({ id: id, commPercentile: arr[0], codePercentile: arr[1], person: arr[2] });
         }).catch(console.err);
       }
@@ -21921,7 +21920,6 @@ var Main = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      console.log(this.state);
       return _react2.default.createElement(
         'div',
         null,
